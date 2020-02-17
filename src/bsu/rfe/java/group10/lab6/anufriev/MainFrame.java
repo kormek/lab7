@@ -12,7 +12,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class MainFrame extends JFrame {
+public class MainFrame extends JFrame implements MessageListener{
 
     private static final String FRAME_TITLE = "Клиент Мгновенных Сообщений";
 
@@ -36,6 +36,8 @@ public class MainFrame extends JFrame {
 
     private JTextArea textAreaIncoming;
     private JTextArea textAreaOutgoing;
+
+    private InstantMessenger instantMessenger = new InstantMessenger();
 
     public MainFrame(){
 

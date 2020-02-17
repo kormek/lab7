@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa4df82c-dd30-4e31-a538-fd9b0c5fa1cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/InstantMessenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/Peer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/MainFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +15,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lab7" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +57,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
