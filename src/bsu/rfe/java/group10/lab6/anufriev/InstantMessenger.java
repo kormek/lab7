@@ -8,10 +8,13 @@ import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.LinkedList;
+import java.util.List;
 
 public class InstantMessenger implements MessageListener {
 
    private String sender;
+    private List<MessageListener> listeners = new LinkedList<MessageListener>();
 
     private static final int SERVER_PORT = 5500;
 
@@ -37,20 +40,7 @@ public void sendMessage(String senderName,String address,String message){
         final String destinationAddress = address;
         //final String message = textAreaOutgoing.getText();
 
-        if(senderName.isEmpty()){
-            JOptionPane.showMessageDialog(new JFrame(),"Write sender name","Error",JOptionPane.ERROR_MESSAGE);
-            return;
-        }
 
-        if(destinationAddress.isEmpty()){
-            JOptionPane.showMessageDialog(new JFrame(),"Write destination address","Error",JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-
-        if(message.isEmpty()){
-            JOptionPane.showMessageDialog(new JFrame(),"Message is empty","Error",JOptionPane.ERROR_MESSAGE);
-            return;
-        }
 
         final Socket socket = new Socket(destinationAddress,SERVER_PORT);
 
@@ -63,10 +53,10 @@ public void sendMessage(String senderName,String address,String message){
 
     } catch (UnknownHostException e) {
         e.printStackTrace();
-        JOptionPane.showMessageDialog(new JFrame(),"Can't send the message:destined host not found","Error",JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null,"Can't send the message:destined host not found","Error",JOptionPane.ERROR_MESSAGE);
     } catch (IOException e) {
         e.printStackTrace();
-        JOptionPane.showMessageDialog(new JFrame(),"Can't send the message","Error",JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null,"Can't send the message","Error",JOptionPane.ERROR_MESSAGE);
     }
 }
 
@@ -86,22 +76,19 @@ private void startServer(){
 
                     socket.close();
 
-                    final String address = ((InetSocketAddress)socket
-                            .getRemoteSocketAddress())
-                            .getAddress()
-                            .getHostAddress();
+                    notifyListeners(new Peer(senderName,(InetSocketAddress) socket.getRemoteSocketAddress()), message);
 
 
                 }
             } catch (IOException e) {
                 e.printStackTrace();
-                JOptionPane.showMessageDialog(new JFrame(),"Error in server functioning","Mistake",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null,"Error in server functioning","Mistake",JOptionPane.ERROR_MESSAGE);
             }
         }
     }).start();
 }
 
-private void messageReceived(){
+public void messageReceived(Peer sender,String message){
 
 }
     private void notifyListeners(Peer sender, String message) {
@@ -111,4 +98,12 @@ private void messageReceived(){
             }
         }
    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
+    }
+
+    public String getSender() {
+        return sender;
+    }
 }

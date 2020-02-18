@@ -14,16 +14,5 @@ public class Main {
                 frame.setVisible(true);
             }
         });
-
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                final MainFrame frame1 = new MainFrame();
-                frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame1.setVisible(true);
-            }
-        });
-
-
     }
 }

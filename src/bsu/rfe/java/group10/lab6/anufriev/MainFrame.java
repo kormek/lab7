@@ -173,9 +173,10 @@ public class MainFrame extends JFrame implements MessageListener{
 
             final DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 
-            out.writeUTF(senderName);
-            out.writeUTF(message);
-            socket.close();
+
+
+            instantMessenger.sendMessage(senderName,destinationAddress,message);
+
             textAreaIncoming.append(("I - > "+ destinationAddress + ": " + message + "\n"));
 
             textAreaOutgoing.setText("");
@@ -187,6 +188,11 @@ public class MainFrame extends JFrame implements MessageListener{
             e.printStackTrace();
             JOptionPane.showMessageDialog(MainFrame.this,"Can't send the message","Error",JOptionPane.ERROR_MESSAGE);
         }
+    }
+
+    public void messageReceived(Peer sender,String message){
+
+        textAreaIncoming.append(sender.getName() + " (" + sender.getAddress().getHostName() + ": " + sender.getAddress().getPort() + "): " + message);
     }
 
 
