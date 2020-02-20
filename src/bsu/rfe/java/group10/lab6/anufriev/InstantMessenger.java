@@ -99,6 +99,12 @@ public void messageReceived(Peer sender,String message){
         }
    }
 
+    public void addMessageListner(MessageListener listener){
+        synchronized(listeners){
+            listeners.add(listener);
+        }
+    }
+
     public void setSender(String sender) {
         this.sender = sender;
     }

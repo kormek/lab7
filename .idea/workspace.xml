@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="aa4df82c-dd30-4e31-a538-fd9b0c5fa1cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab7/bsu/rfe/java/group10/lab6/anufriev/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab7/bsu/rfe/java/group10/lab6/anufriev/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab7/bsu/rfe/java/group10/lab6/anufriev/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab7/bsu/rfe/java/group10/lab6/anufriev/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab7/bsu/rfe/java/group10/lab6/anufriev/MainFrame$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab7/bsu/rfe/java/group10/lab6/anufriev/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab7/bsu/rfe/java/group10/lab6/anufriev/MainFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/InstantMessenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/InstantMessenger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bsu/rfe/java/group10/lab6/anufriev/MessageListener.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
